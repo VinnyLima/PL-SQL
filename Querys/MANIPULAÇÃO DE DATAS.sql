@@ -34,4 +34,8 @@ SELECT
     END as QUAL_DIA
 FROM
     dual;
+    
+--verificando o mês anterior, para exibir meses anteriores sera necessario adiionar a quantidade de onde esta o -1
+    
+SELECT TO_CHAR(ADD_MONTHS(SYSDATE, -1), 'MM/YYYY') AS MES_PASSADO FROM DUAL;
 
