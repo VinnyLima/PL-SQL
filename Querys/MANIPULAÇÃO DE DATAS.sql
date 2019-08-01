@@ -39,3 +39,17 @@ FROM
     
 SELECT TO_CHAR(ADD_MONTHS(SYSDATE, -1), 'MM/YYYY') AS MES_PASSADO FROM DUAL;
 
+SELECT GET_DIAS_UTEIS(ADD_MONTHS(trunc(sysdate, 'mm'), 1), ADD_MONTHS(last_day(SYSDATE), 1),0) as dias_uteis FROM DUAL;
+
+SELECT ADD_MONTHS(trunc(sysdate, 'mm'), 1) AS PRIMEIRO_DIA, ADD_MONTHS(last_day(SYSDATE), 1) AS ULTIMO_DIA FROM DUAL;
+
+select trunc(sysdate, 'mm') DATA from dual;
+
+select trunc(sysdate, 'rr') DATA from dual;
+
+select * from TSIFER;
+
+SELECT GET_DIAS_UTEIS( '01/07/2019', '31/07/2019', 0) as dias_uteis from dual;
+
+
+
